@@ -17,10 +17,10 @@ import ProgressBar from 'progress-bar';
 />
 ```
 ### Available options
-| Option   | Default      | Type       | Description                                   |   |
-|----------|--------------|------------|-----------------------------------------------|---|
-| position | top          | **string** | Set progress bar position {**_top, bottom_**} |   |
-| progress | **required** | **number** | Set progress **0-100**%                       |   |
+| Option   | Default      | Type       | Description                                   |
+|----------|--------------|------------|-----------------------------------------------|
+| position | top          | **string** | Set progress bar position {**_top, bottom_**} |
+| progress | **required** | **number** | Set progress **0-100**%                       |
 
 ## License
 
