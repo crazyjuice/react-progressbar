@@ -2,12 +2,12 @@
 ### Installation
 
 ```javascript
-npm i -S git+ssh://git@github.com:crazyjuice/react-progressbar.git
+npm i -S cjs-react-progressbar
 ```
 
-### Import
+### Import as ES6 module
 ```javascript
-import ProgressBar from 'progress-bar';
+import ProgressBar from 'cjs-react-progressbar';
 ```
 ### Usage
 ```javascript
@@ -19,8 +19,8 @@ import ProgressBar from 'progress-bar';
 ### Available options
 | Option   | Default      | Type       | Description                                   |
 |----------|--------------|------------|-----------------------------------------------|
-| position | top          | **string** | Set progress bar position {**_top, bottom_**} |
-| progress | **required** | **number** | Set progress **0-100**%                       |
+| position | top          | **{string}** | Set progress bar position {**_top, bottom_**} |
+| progress | **_required_** | **{number}** | Set progress **0-100**%                       |
 
 ## License
 
