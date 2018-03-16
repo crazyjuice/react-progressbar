@@ -1,11 +1,17 @@
 {
   "name": "cjs-react-progressbar",
   "appName": "ProgressBar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Top Progress Bar",
   "main": "./lib/ProgressBar.min.js",
   "repository": "git@github.com:crazyjuice/react-progressbar.git",
   "author": "Piotr Sikora",
+  "keywords": [
+    "progress",
+    "progress bar",
+    "react",
+    "top progress bar"
+  ],
   "license": "MIT",
   "scripts": {
     "test": "mocha \"src/**/*.test.js*\" -r babel-core/register -r ignore-styles -r setupTests.js",
@@ -48,6 +54,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "favicons-webpack-plugin": "^0.0.7",
     "file-loader": "^1.1.5",
@@ -56,6 +63,7 @@
     "ignore-styles": "^5.0.1",
     "jsdom": "^11.6.2",
     "mocha": "^4.0.1",
+    "morgan": "^1.9.0",
     "node-sass": "^4.7.2",
     "nyc": "^11.4.1",
     "postcss-loader": "^2.0.9",
@@ -78,8 +86,6 @@
   "dependencies": {
     "autoprefixer": "^7.2.3",
     "babel-polyfill": "^6.26.0",
-    "express": "^4.16.2",
-    "morgan": "^1.9.0",
     "normalize.css": "^7.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
