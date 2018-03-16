@@ -21,7 +21,6 @@ import ProgressBar from 'progress-bar';
 |----------|--------------|------------|-----------------------------------------------|---|
 | position | top          | **string** | Set progress bar position {**_top, bottom_**} |   |
 | progress | **required** | **number** | Set progress **0-100**%                       |   |
-|          |              |            |                                               |   |
 
 ## License
 
