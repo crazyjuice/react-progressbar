@@ -1,4 +1,8 @@
 # React ProgressBar
+
+### Demo
+[See demo page](https://crazyjuice.github.io/progressbar.github.io/index.html)
+
 ### Installation
 
 ```javascript
@@ -12,15 +16,19 @@ import ProgressBar from 'cjs-react-progressbar';
 ### Usage
 ```javascript
 <ProgressBar
-  position="top"
   progress={25}
+  position="top"
+  lineHeight={5}
+  lineColor="green"
 />
 ```
-### Available options
+### Available options (props)
 | Option   | Default      | Type       | Description                                   |
 |----------|--------------|------------|-----------------------------------------------|
-| position | top          | **{string}** | Set progress bar position {**_top, bottom_**} |
-| progress | **_required_** | **{number}** | Set progress **0-100**%                       |
+| progress | ****(required)** | **number** | Set progress **_(0-100)_** %                       |
+| position | top          | **string** | Set progress bar position **_(top, bottom_)** |
+| lineColor | #77b6ff | **string** | Set progress bar color **_use css color property (hex, rgb, rgba, hsl, hsla)_**                      |
+| lineHeight | 2 | **number** | Set progress bar line height **_(px)_**                      |
 
 ## License
 

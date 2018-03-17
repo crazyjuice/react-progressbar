@@ -8,17 +8,13 @@ class Demo extends Component {
 
     this.state = {
       progress: 0,
-      position: 'top'
+      position: 'top',
+      lineHeight: 2,
+      lineColor: '#77b6ff'
     };
   }
 
-  setProgress = (progress) => {
-    this.setState({ progress });
-  };
-
-  setPosition = (position) => {
-    this.setState({ position });
-  };
+  handleState = (key, value) => this.setState({ [key]: value });
 
   render() {
     return (
@@ -26,14 +22,20 @@ class Demo extends Component {
         <ProgressBar
           position={this.state.position}
           progress={this.state.progress}
+          lineHeight={this.state.lineHeight}
+          lineColor={this.state.lineColor}
         />
-        <h1>Progress bar Demo</h1>
-        <button onClick={() => this.setPosition('top')}>Set position Top</button>
-        <button onClick={() => this.setPosition('bottom')}>Set position Bottom</button>
-        <button onClick={() => this.setProgress(25)}>Set state 25%</button>
-        <button onClick={() => this.setProgress(50)}>Set state 50%</button>
-        <button onClick={() => this.setProgress(75)}>Set state 75%</button>
-        <button onClick={() => this.setProgress(100)}>Set state 100%</button>
+        <h1>Progress Bar Demo</h1>
+        <button onClick={() => this.handleState('lineHeight', 8)}>Set line height 8px</button>
+        <button onClick={() => this.handleState('lineHeight', 2)}>Set line height 2px (default)</button>
+        <button onClick={() => this.handleState('lineColor', 'red')}>Set line color to red</button>
+        <button onClick={() => this.handleState('lineColor', '#77b6ff')}>Set line color to blue (default)</button>
+        <button onClick={() => this.handleState('position', 'top')}>Set position Top</button>
+        <button onClick={() => this.handleState('position', 'bottom')}>Set position Bottom</button>
+        <button onClick={() => this.handleState('progress', 25)}>Set state 25%</button>
+        <button onClick={() => this.handleState('progress', 50)}>Set state 50%</button>
+        <button onClick={() => this.handleState('progress', 75)}>Set state 75%</button>
+        <button onClick={() => this.handleState('progress', 100)}>Set state 100%</button>
       </div>
     );
   }

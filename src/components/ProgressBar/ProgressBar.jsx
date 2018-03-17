@@ -4,17 +4,24 @@ import PropTypes from 'prop-types';
 const baseClass = {
   position: 'fixed',
   left: 0,
-  height: '2px',
-  background: '#77b6ff',
-  boxShadow: '0 0 10px rgba(119, 182, 255, .7)',
   transition: 'all 0.4s ease'
 };
 
 const ProgressBar = (props) => {
+  const {
+    position,
+    progress,
+    lineHeight,
+    lineColor
+  } = props;
+
   const customClass = {
-    [props.position]: 0,
-    width: `${props.progress}%`,
-    opacity: (props.progress === (0 || 100))
+    [position]: 0,
+    width: `${progress}%`,
+    height: `${lineHeight}px`,
+    background: lineColor,
+    boxShadow: `0 0 10px ${lineColor}`,
+    opacity: (progress === (0 || 100))
       ? 0
       : 1
   };
@@ -32,11 +39,15 @@ const ProgressBar = (props) => {
 
 ProgressBar.propTypes = {
   position: PropTypes.string,
+  lineColor: PropTypes.string,
+  lineHeight: PropTypes.number,
   progress: PropTypes.number.isRequired
 };
 
 ProgressBar.defaultProps = {
-  position: 'top'
+  position: 'top',
+  lineColor: '#77b6ff',
+  lineHeight: 2
 };
 
 export default ProgressBar;
