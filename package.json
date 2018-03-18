@@ -17,7 +17,7 @@
     "test": "mocha \"src/**/*.test.js*\" -r babel-core/register -r ignore-styles -r setupTests.js",
     "test:cover": "nyc npm test",
     "test:watch": "npm run test -- --watch",
-    "coveralls": "npm run test:cover && cat ./coverage/lcov.info | node node_modules/bin/coveralls",
+    "coveralls": "npm run test:cover && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --ext .js,.jsx src && npm run lint:post",
     "lint:fix": "eslint --fix --ext .jsx,.js src && npm run lint:post",
     "lint:post": "echo \"No ESLint errors!!!\"",
