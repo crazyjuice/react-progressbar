@@ -1,7 +1,7 @@
 {
   "name": "cjs-react-progressbar",
   "appName": "ProgressBar",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "React Progress Bar",
   "main": "./lib/ProgressBar.min.js",
   "repository": "git@github.com:crazyjuice/react-progressbar.git",
@@ -29,9 +29,6 @@
     "serve": "webpack-dev-server --open --color --progress --config webpack.config.dev.js --env.MIDDLEWARE=0",
     "start": "npm run lint && npm run server:dev",
     "start:dev": "npm run lint && npm run serve"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -7,12 +7,14 @@ const baseClass = {
   transition: 'all 0.4s ease'
 };
 
-const ProgressBar = (props) => {
+// eslint-disable-next-line import/prefer-default-export
+export const ProgressBar = (props) => {
   const {
     position,
     progress,
     lineHeight,
-    lineColor
+    lineColor,
+    zIndex
   } = props;
 
   const customClass = {
@@ -23,7 +25,8 @@ const ProgressBar = (props) => {
     boxShadow: `0 0 10px ${lineColor}`,
     opacity: (progress === (0 || 100))
       ? 0
-      : 1
+      : 1,
+    zIndex
   };
 
   return (
@@ -41,13 +44,13 @@ ProgressBar.propTypes = {
   position: PropTypes.string,
   lineColor: PropTypes.string,
   lineHeight: PropTypes.number,
-  progress: PropTypes.number.isRequired
+  progress: PropTypes.number.isRequired,
+  zIndex: PropTypes.number
 };
 
 ProgressBar.defaultProps = {
   position: 'top',
   lineColor: '#77b6ff',
-  lineHeight: 2
+  lineHeight: 2,
+  zIndex: 100
 };
-
-export default ProgressBar;

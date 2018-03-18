@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ProgressBar from './ProgressBar';
+import { ProgressBar } from './ProgressBar';
 
 describe('<ProgressBar />', () => {
   it('renders <ProgressBar /> component progress set to 0', () => {

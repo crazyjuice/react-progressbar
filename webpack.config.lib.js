@@ -50,12 +50,6 @@ module.exports = (env) => {
         commonjs2: 'prop-types',
         amd: 'prop-types',
         root: 'PropTypes'
-      },
-      lodash: {
-        commonjs: 'lodash',
-        commonjs2: 'lodash',
-        amd: 'lodash',
-        root: '_'
       }
     },
     module: {
