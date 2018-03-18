@@ -1,8 +1,6 @@
 # React ProgressBar
 
-
 [![GitHub issues](https://img.shields.io/github/issues/crazyjuice/react-progressbar.svg)](https://github.com/crazyjuice/react-progressbar/issues) [![GitHub license](https://img.shields.io/github/license/crazyjuice/react-progressbar.svg)](https://github.com/crazyjuice/react-progressbar/blob/dev/LICENSE)
-
 
 
 ### Demo
