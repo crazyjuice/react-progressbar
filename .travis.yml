@@ -4,4 +4,6 @@ node_js:
   - '8'
   - '6'
 
-after_success: npm run text:cover
+  script:
+  - npm run test:cover
+  - npm run build:lib
