@@ -1,6 +1,10 @@
 React ProgressBar Changelog
 ===========================
 
+1.2.1 (18-Mar-2018)
+  - CHANGED: Update README.md with badges
+  - REMOVED: Unused packages from dependencies
+
 1.2.0 (18-Mar-2018)
   - NEW: Added new prop (zIndex)
   - CHANGED: Export module as named (previously default export)
