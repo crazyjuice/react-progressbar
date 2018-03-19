@@ -42,31 +42,31 @@ class Demo extends Component {
           <div className="btn-group">
             <h4>Line height</h4>
             <button
-              className={this.state.lineHeight === 8 ? 'active' : ''}
-              onClick={() => this.handleState('lineHeight', 8)}
-            >
-              8px
-            </button>
-            <button
               className={this.state.lineHeight === 2 ? 'active' : ''}
               onClick={() => this.handleState('lineHeight', 2)}
             >
               2px
             </button>
+            <button
+              className={this.state.lineHeight === 8 ? 'active' : ''}
+              onClick={() => this.handleState('lineHeight', 8)}
+            >
+              8px
+            </button>
           </div>
           <div className="btn-group">
             <h4>Line color</h4>
-            <button
-              className={this.state.lineColor === 'red' ? 'active' : ''}
-              onClick={() => this.handleState('lineColor', 'red')}
-            >
-              Red
-            </button>
             <button
               className={this.state.lineColor === '#77b6ff' ? 'active' : ''}
               onClick={() => this.handleState('lineColor', '#77b6ff')}
             >
               Blue
+            </button>
+            <button
+              className={this.state.lineColor === 'red' ? 'active' : ''}
+              onClick={() => this.handleState('lineColor', 'red')}
+            >
+              Red
             </button>
           </div>
           <div className="btn-group">
