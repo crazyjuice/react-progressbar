@@ -14,7 +14,9 @@ export const ProgressBar = (props) => {
     progress,
     lineHeight,
     lineColor,
-    zIndex
+    zIndex,
+    customStyles,
+    ...rest
   } = props;
 
   const customClass = {
@@ -26,9 +28,9 @@ export const ProgressBar = (props) => {
     opacity: (progress === (0 || 100))
       ? 0
       : 1,
-    zIndex
+    zIndex,
+    ...customStyles
   };
-
   return (
     <div
       className="progress-bar"
@@ -36,6 +38,7 @@ export const ProgressBar = (props) => {
         ...baseClass,
         ...customClass
       }}
+      {...rest}
     />
   );
 };
@@ -45,12 +48,14 @@ ProgressBar.propTypes = {
   lineColor: PropTypes.string,
   lineHeight: PropTypes.number,
   progress: PropTypes.number.isRequired,
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
+  customStyles: PropTypes.shape()
 };
 
 ProgressBar.defaultProps = {
   position: 'top',
   lineColor: '#77b6ff',
   lineHeight: 2,
-  zIndex: 100
+  zIndex: 100,
+  customStyles: {}
 };

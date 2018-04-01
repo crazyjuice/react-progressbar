@@ -7,7 +7,6 @@
 [See demo page](https://crazyjuice.github.io/progressbar.github.io)
 
 ### Installation
-
 ```javascript
 npm i -S cjs-react-progressbar
 ```
@@ -16,6 +15,7 @@ npm i -S cjs-react-progressbar
 ```javascript
 import { ProgressBar } from 'cjs-react-progressbar';
 ```
+
 ### Usage
 ```javascript
 <ProgressBar
@@ -24,16 +24,19 @@ import { ProgressBar } from 'cjs-react-progressbar';
   lineColor="green"
   lineHeight={5}
   zIndex={10}
+  customStyles={{ userSelect: 'none' }}
 />
 ```
+
 ### Available options (props)
 | Option   | Default      | Type       | Description                                   |
 |----------|--------------|------------|-----------------------------------------------|
-| progress | ****(required)** | **number** | Set progress **_(0-100)_** %                       |
+| progress | **(required)** | **number** | Set progress **_(0-100)_** % |
 | position | top          | **string** | Set progress bar position **_(top, bottom_)** |
-| lineColor | #77b6ff | **string** | Set progress bar color **_use css color property (hex, rgb, rgba, hsl, hsla)_**                      |
-| lineHeight | 2 | **number** | Set progress bar line height **_(px)_**                      |
-| zIndex | 100 | **number** | Set progress bar stack order                      |
+| lineColor | #77b6ff | **string** | Set progress bar color **_use css color property (hex, rgb, rgba, hsl, hsla)_** |
+| lineHeight | 2 | **number** | Set progress bar line height **_(px)_** |
+| zIndex | 100 | **number** | Set progress bar stack order |
+| customStyles | **(optional)** | **object** | Add custom css styles or overwrite exiting ones |
 
 ## License
 

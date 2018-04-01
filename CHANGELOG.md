@@ -1,6 +1,10 @@
 React ProgressBar Changelog
 ===========================
 
+1.2.2 (01-Apr-2018)
+  - NEW: Added new prop (customStyles)
+  - CHANGED: Moved all dependencies to devDependencies (reduced file size)
+
 1.2.1 (18-Mar-2018)
   - CHANGED: Update README.md with badges
   - REMOVED: Unused packages from dependencies

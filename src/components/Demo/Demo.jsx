@@ -16,6 +16,10 @@ class Demo extends Component {
 
   handleState = (key, value) => this.setState({ [key]: value });
 
+  customStyles = {
+    userSelect: 'none'
+  };
+
   render() {
     return (
       <div className="demo-wrapper">
@@ -25,6 +29,7 @@ class Demo extends Component {
           lineHeight={this.state.lineHeight}
           lineColor={this.state.lineColor}
           zIndex={1000}
+          customStyles={this.customStyles}
         />
         <h1>Progress Bar Demo</h1>
         <p>(NOTE: Progress bar will appear if prop <span className="text-bold">progress</span> is greater than 0,<br />
@@ -38,53 +43,53 @@ class Demo extends Component {
           <button onClick={() => this.handleState('progress', 100)}>100%</button>
         </div>
         {(this.state.progress > 0 && this.state.progress < 100) &&
-        <div className="options-wrapper">
-          <div className="btn-group">
-            <h4>Line height</h4>
-            <button
-              className={this.state.lineHeight === 2 ? 'active' : ''}
-              onClick={() => this.handleState('lineHeight', 2)}
-            >
-              2px
-            </button>
-            <button
-              className={this.state.lineHeight === 8 ? 'active' : ''}
-              onClick={() => this.handleState('lineHeight', 8)}
-            >
-              8px
-            </button>
-          </div>
-          <div className="btn-group">
-            <h4>Line color</h4>
-            <button
-              className={this.state.lineColor === '#77b6ff' ? 'active' : ''}
-              onClick={() => this.handleState('lineColor', '#77b6ff')}
-            >
-              Blue
-            </button>
-            <button
-              className={this.state.lineColor === 'red' ? 'active' : ''}
-              onClick={() => this.handleState('lineColor', 'red')}
-            >
-              Red
-            </button>
-          </div>
-          <div className="btn-group">
-            <h4>Position</h4>
-            <button
-              className={this.state.position === 'top' ? 'active' : ''}
-              onClick={() => this.handleState('position', 'top')}
-            >
-              Top
-            </button>
-            <button
-              className={this.state.position === 'bottom' ? 'active' : ''}
-              onClick={() => this.handleState('position', 'bottom')}
-            >
-              Bottom
-            </button>
-          </div>
-        </div>}
+          <div className="options-wrapper">
+            <div className="btn-group">
+              <h4>Line height</h4>
+              <button
+                className={this.state.lineHeight === 2 ? 'active' : ''}
+                onClick={() => this.handleState('lineHeight', 2)}
+              >
+                2px
+              </button>
+              <button
+                className={this.state.lineHeight === 8 ? 'active' : ''}
+                onClick={() => this.handleState('lineHeight', 8)}
+              >
+                8px
+              </button>
+            </div>
+            <div className="btn-group">
+              <h4>Line color</h4>
+              <button
+                className={this.state.lineColor === '#77b6ff' ? 'active' : ''}
+                onClick={() => this.handleState('lineColor', '#77b6ff')}
+              >
+                Blue
+              </button>
+              <button
+                className={this.state.lineColor === 'red' ? 'active' : ''}
+                onClick={() => this.handleState('lineColor', 'red')}
+              >
+                Red
+              </button>
+            </div>
+            <div className="btn-group">
+              <h4>Position</h4>
+              <button
+                className={this.state.position === 'top' ? 'active' : ''}
+                onClick={() => this.handleState('position', 'top')}
+              >
+                Top
+              </button>
+              <button
+                className={this.state.position === 'bottom' ? 'active' : ''}
+                onClick={() => this.handleState('position', 'bottom')}
+              >
+                Bottom
+              </button>
+            </div>
+          </div>}
       </div>
     );
   }
