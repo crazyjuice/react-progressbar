@@ -1,7 +1,6 @@
 # React ProgressBar
 
-[![Build Status](https://travis-ci.org/crazyjuice/react-progressbar.svg?branch=dev)](https://travis-ci.org/crazyjuice/react-progressbar) [![Coverage Status](https://coveralls.io/repos/github/crazyjuice/react-progressbar/badge.svg?branch=dev)](https://coveralls.io/github/crazyjuice/react-progressbar?branch=dev) [![GitHub issues](https://img.shields.io/github/issues/crazyjuice/react-progressbar.svg)](https://github.com/crazyjuice/react-progressbar/issues) [![GitHub license](https://img.shields.io/github/license/crazyjuice/react-progressbar.svg)](https://github.com/crazyjuice/react-progressbar/blob/dev/LICENSE)
-
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/crazyjuice/react-progressbar/blob/dev/LICENSE) [![npm version](https://img.shields.io/npm/v/cjs-react-progressbar.svg?style=flat)](https://www.npmjs.com/package/cjs-react-progressbar) [![Build Status](https://travis-ci.org/crazyjuice/react-progressbar.svg?branch=dev)](https://travis-ci.org/crazyjuice/react-progressbar) [![Coverage Status](https://coveralls.io/repos/github/crazyjuice/react-progressbar/badge.svg?branch=dev)](https://coveralls.io/github/crazyjuice/react-progressbar?branch=dev) [![GitHub issues](https://img.shields.io/github/issues/crazyjuice/react-progressbar.svg)](https://github.com/crazyjuice/react-progressbar/issues)
 
 ### Demo
 [See demo page](https://crazyjuice.github.io/progressbar.github.io)
