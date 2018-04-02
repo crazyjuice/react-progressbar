@@ -1,7 +1,7 @@
 {
   "name": "cjs-react-progressbar",
   "appName": "ProgressBar",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "React Progress Bar",
   "main": "./lib/ProgressBar.min.js",
   "repository": "git@github.com:crazyjuice/react-progressbar.git",
