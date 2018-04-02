@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const appInfo = require('./package.json');
 
+process.env.NODE_ENV = 'development';
+
 module.exports = (env) => {
   const MIDDLEWARE = env.MIDDLEWARE !== 0;
   return {
@@ -122,5 +124,5 @@ module.exports = (env) => {
         }
       ]
     }
-  }
+  };
 };

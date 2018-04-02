@@ -1,6 +1,9 @@
 React ProgressBar Changelog
 ===========================
 
+1.2.3 (02-Apr-2018)
+  - FIXED: Set proper NODE_ENV flag
+
 1.2.2 (01-Apr-2018)
   - NEW: Added new prop (customStyles)
   - CHANGED: Moved all dependencies to devDependencies (reduced file size)

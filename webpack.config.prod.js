@@ -7,6 +7,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const appInfo = require('./package.json');
 
+process.env.NODE_ENV = 'production';
+
 module.exports = {
   entry: {
     main: [
