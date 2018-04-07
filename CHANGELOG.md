@@ -1,6 +1,12 @@
 React ProgressBar Changelog
 ===========================
 
+1.2.5 (07-Apr-2018)
+  - NEW: Added new prop (className)
+
+1.2.4 (02-Apr-2018)
+  - CHANGED: Updated README.md
+
 1.2.3 (02-Apr-2018)
   - FIXED: Set proper NODE_ENV flag
 

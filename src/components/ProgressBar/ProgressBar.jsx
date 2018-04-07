@@ -15,6 +15,7 @@ export const ProgressBar = (props) => {
     lineHeight,
     lineColor,
     zIndex,
+    className,
     customStyles,
     ...rest
   } = props;
@@ -33,7 +34,7 @@ export const ProgressBar = (props) => {
   };
   return (
     <div
-      className="progress-bar"
+      className={`progress-bar ${className}`.trim()}
       style={{
         ...baseClass,
         ...customClass
@@ -49,6 +50,7 @@ ProgressBar.propTypes = {
   lineHeight: PropTypes.number,
   progress: PropTypes.number.isRequired,
   zIndex: PropTypes.number,
+  className: PropTypes.string,
   customStyles: PropTypes.shape()
 };
 
@@ -57,5 +59,6 @@ ProgressBar.defaultProps = {
   lineColor: '#77b6ff',
   lineHeight: 2,
   zIndex: 100,
+  className: '',
   customStyles: {}
 };

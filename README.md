@@ -23,6 +23,7 @@ import { ProgressBar } from 'cjs-react-progressbar';
   lineColor="green"
   lineHeight={5}
   zIndex={10}
+  className="some-class-name"
   customStyles={{ userSelect: 'none' }}
 />
 ```
@@ -35,6 +36,7 @@ import { ProgressBar } from 'cjs-react-progressbar';
 | lineColor | #77b6ff | **string** | Set progress bar color **_use css color property (hex, rgb, rgba, hsl, hsla)_** |
 | lineHeight | 2 | **number** | Set progress bar line height **_(px)_** |
 | zIndex | 100 | **number** | Set progress bar stack order |
+| className | **(optional)** | **string** | Add custom class name to progress bar |
 | customStyles | **(optional)** | **object** | Add custom css styles or overwrite exiting ones |
 
 ## License
